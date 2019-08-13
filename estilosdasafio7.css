@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	margin: 0 0 20px 0;
+	color: black;
+
+}
+header h1{
+	transition: all 3s;
+}
+header h1:hover{
+	background-color: pink;
+	color: purple;
+	padding: 25px 0;
+	cursor:pointer;
+
+}
+h2{
+	text-align: right;
+	padding: 20px;
+	text-transform: capitalize;
+	color: white;
+}
+h2 span{
+	color:red;
+}
+h3{
+	color: white;
+	padding: 15px;
+	font-weight: bold;
+	margin: 0;
+}
+
+header{
+	background-color: orange;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.bg-yellow{
+	background-color: yellow;
+}
+.bg-blue{
+	background-color: blue;
+}
+.bg-green{
+	background-color: green;
+}
+.bg-aqua{
+	background-color: aqua;
+}
+.bg-white{
+	background-color: white;
+}
+.bg-red{
+	background-color: red;
+}
+
+.col1, .col2, .col3{
+	float: left;
+	max-width: 30%;
+	padding: 0 1em;
+
+
+}
+.col2{
+	border-left: dotted 4px red;
+	border-right: dotted 4px blue;
+
+}
+.cabecera{
+	background-image: url("img/drwho02.jpg");
+	background-size: contain;
+}
+.clearfix{
+	clear: both;
+}
+
+#autores{
+	background-image: url("img/drwho01.jpg");
+	padding: 2em;
+}
+#autores main {
+	margin: 0 auto;
+	max-width: 90%;
+	padding-bottom: 1.2em;
+}
+
+
+footer{
+	background-color: red;
+	background: linear-gradient(to left, blue, yellow, orange, green, pink, indigo);
+	text-align: center;
+	font-size: 1em;
+	padding: 10px;
+	font-family: Helvetica, sans-serif;
+
+
+}
+
+@keyframes gowi{
+	0%{top: 0;left:0;}
+	50%{top:0px;left:1250px; color: black;}
+	100%{top:0px;left:0px;}
+	
+}
+
+#animacion div {
+	position: relative;
+	animation-name: gowi;
+	animation-duration:4s;
+	width: 50px;
+	animation-iteration-count:infinite;
+	animation-delay:1s;
+	color: pink;
+
+}
