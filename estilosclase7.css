@@ -1,0 +1,158 @@
+body{
+	background-color: aqua;
+}
+h1{
+	text-align: center;
+	border-bottom: solid 2px black;
+	padding: 0 0 20px 0;		
+}
+h2{
+	text-align: center;
+	background-color: black;
+	color:gray;
+	padding: 20px 0px;
+}
+div {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+
+}
+section{
+	padding: 0 4em;
+}
+
+/* Gradiantes lineales*/
+
+.linear-grad {
+	background: linear-gradient(-180deg, green,orange);
+}
+.linear-grad-b{
+	background: linear-gradient(to left bottom, blue, red,indigo);
+}
+
+.linear-grad-c{
+	background: linear-gradient(to right, red 50%, green 50%);
+}
+.linear-grad-d{
+	background: linear-gradient(to left,rgba(255,0,0,0.7),rgba(255,0,0,1));
+}
+.linear-repeat{
+	background: repeating-linear-gradient(80deg,red,yellow 10%,green 20%);
+}
+
+/* Gradiantes radiales*/
+
+.rad-grad{
+	background: radial-gradient(red, yellow);
+	-webkit-background: radial-gradient(red, yellow); /* Para safari 6.0 en adelante*/
+	width: 300px;
+}
+
+.rad-grad-b{
+	background: radial-gradient(circle,blue,green, red, pink);
+	width: 300px;
+}
+
+.rad-repeating{
+	background: repeating-radial-gradient(pink 10%,orange,red);
+}
+
+/* Transformaciones*/
+
+#transformaciones div{
+	width: 200px;
+	height:200px;
+	background: pink;
+}
+.t-rotar{
+	transform: rotate(45deg);
+}
+.t-mover{
+	transform: translate(300px,50px);
+}
+
+.t-escala{
+	position: relative;
+	transform: scale(2,1);
+	left:200px;
+	top: 100px;
+	text-align: center;
+	color: green;
+	font-family: Helvetica, sans-serif;
+	
+}
+.t-sesgar{
+	transform: skew(20deg,10deg);
+	text-align: center;
+
+}
+
+/* Transiciones*/
+
+#transiciones div{
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+}
+#transiciones .trans{
+	
+	transition: all 0.5s;
+	transition-delay: 0.5s;
+	transition-timing-function: ease-out;
+
+
+}
+#transiciones .trans:hover{
+	
+	transition-delay: 0.5s;
+	width: 650px;
+	background-color: navy;
+	color:white;
+	font-size: 1.2em;
+	
+}
+
+/* Animaciones*/
+
+/* Aca hacemos la animacion*/
+@keyframes ejemplo-a{
+	from{
+		background: red;
+	}
+	to{
+		background: green;
+	}
+}
+@keyframes ejemplo-b{
+
+
+	0%{top: 0;left:0;}
+	25%{top:0px;left:300px;}
+	50%{top:300px;left:300px;}
+	75%{top:300px;left:0px;}
+	100%{top:0px;left:0px;}
+
+
+}
+
+
+/* Aca hacemos decimos a que elementos aplicamos la animacion*/
+#animaciones .anima-a{
+	animation-name: ejemplo-a;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	width: 200px;
+	height: 200px;
+
+}
+#animaciones .anima-b{
+	position: relative; /*tener en cuenta la posicion*/
+	animation-name: ejemplo-b;
+	animation-duration:3s;
+	width: 150px;
+	height: 150px;
+	background-color: purple;
+	animation-iteration-count: 6;
+	animation-direction: alternate;
+}

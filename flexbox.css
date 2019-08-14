@@ -1,0 +1,178 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-color: orange;
+	padding-top: 2em;
+}
+h1,h2{
+	text-align: center;
+	
+}
+
+footer{
+	background-color: black;
+	padding: 3em 0;
+	color: white;
+	text-align: center;
+	
+}
+
+/*Esto es el contenedor*/
+#flex-1{ 					
+	display: flex;
+	/*flex-direction: row;
+	flex-wrap: wrap;*/
+	flex-flow: row-reverse wrap;
+	
+}
+
+/*Estos son los cuadrados dentro del contenedor*/
+#flex-1 div{ 				
+	width: 200px;
+	border: solid 1px green;
+	height: 200px;
+	text-align: center;
+	color: green;
+	font-size: 3em;
+	background-color: black;
+
+}
+#flex-2{
+	display: flex;
+	justify-content:space-around; /*justifica el contenido para donde uno quiera*/
+
+}
+
+#flex-2 div{
+	width: 200px;
+	border: solid 1px blue;
+	height: 200px;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+	background-color: yellow;
+
+}
+
+#flex-3{
+	display: flex;
+	align-items: stretch; /*Estira los elementos en vertical al tamaño del contenedor*/
+	height: 500px;
+	background-color: purple;	
+}
+#flex-3 div{
+	width: 200px;
+	border: solid 2px orange;
+	/*height: 200px;*/
+	text-align: center;
+	color: black;
+	font-size: 3em;
+	background-color: green;
+
+}
+#flex-4{
+	display: flex;
+	align-items: baseline;
+	background-color: green;
+	height: 500px;
+	
+}
+#flex-4 div{
+	width: 200px;
+	text-align: center;
+	font-size: 3em;
+	color: black;
+}
+
+#flex-4 div.alt-1{
+	height: 100px;
+	width: 200px;
+	padding-top: 20px;
+}
+
+#flex-4 div.alt-2{
+	height: 300px;
+	width: 200px;
+	padding-top: 30px;
+}
+
+#flex-4 div.alt-3{
+	height: 250px;
+	width: 200px;
+	
+}
+#flex-4 div.alt-4{
+	height: 200px;
+	width: 200px;
+	
+}
+
+.alt-1, .alt-2, .alt-3, .alt-4 {border: solid 2px red; }
+
+#flex-5{
+	display: flex;
+	align-content: space-between;
+	background-color: orange;
+	height: 700px;
+	flex-flow: row wrap;
+}
+
+#flex-5 div{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	font-size: 3em;
+	color: black;
+	border: solid 2px white;
+
+}
+/*Propiedades de los elementos*/
+#fitem-1{
+	display: flex;
+	flex-flow: row wrap;
+	height: 600px;
+	background-color: purple;
+}	
+
+
+#fitem-1 div{
+	flex-grow: 1;
+	width: 200px;
+	border: solid 2px black;
+	height: 200px;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+	background-color: red;
+}
+
+/*Seleccione un elemento para cambiar su tamaño*/
+#fitem-1 div.w3{
+	flex-grow: 5;
+	order: 1;
+}
+
+#fitem-2{
+	display: flex;
+	flex-flow: row wrap;
+	height: 600px;
+	background-color: purple;
+}	
+#fitem-2 div{
+	flex-basis: 15%;
+	width: 200px;
+	border: solid 2px black;
+	height: 200px;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+	background-color: orange;
+}
+
+/*Seleccione un elemento para cambiar su */
+#fitem-2 div.b3{
+	flex-basis: 50%;
+	
+}
